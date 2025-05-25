@@ -15,7 +15,7 @@ graph_arbitrage = "E3evReispCGYdx9XLp27u2BNBBrBEX8XfDjUhrNK9wwm"
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "localnet"
+cluster = "mainnet"
 wallet = "/Users/albertalov/.config/solana/id.json"
 
 [scripts]
