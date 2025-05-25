@@ -1,19 +1,22 @@
-[toolchain]
-package_manager = "yarn"
-
 [features]
-resolution = true
+seeds = false
 skip-lint = false
 
 [programs.localnet]
-graph_arbitrage = "357EfrYtzfofyDAAmHkPYxyjPG3ohzAo5cVay4cUBMgs"
+graph_arbitrage = "E3evReispCGYdx9XLp27u2BNBBrBEX8XfDjUhrNK9wwm"
+
+[programs.devnet]
+graph_arbitrage = "E3evReispCGYdx9XLp27u2BNBBrBEX8XfDjUhrNK9wwm"
+
+[programs.mainnet]
+graph_arbitrage = "E3evReispCGYdx9XLp27u2BNBBrBEX8XfDjUhrNK9wwm"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
 cluster = "localnet"
-wallet = "~/.config/solana/id.json"
+wallet = "/Users/albertalov/.config/solana/id.json"
 
 [scripts]
 test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
